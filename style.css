@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.header_sup{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo img{
+    width: 250px;
+}
+.Buscar{
+    padding: 5px;
+   
+    
+}
+.Buscar input{
+    width: 0px;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid rgb(195, 194, 194);
+    border-radius: 30px;
+    transition: all 0.6s ease;
+   
+    
+    
+
+}
+.fas{
+    width: 50px;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.Buscar:hover input{
+    width: 240px;
+}
+.Buscar input:focus{
+    width: 240px;
+}
+.btn:hover i{
+    transform: rotate(-360deg);
+}
+.buscar{
+    margin-left: 500px;
+}
+.container_menu{
+    width: 100%;
+    height: 80px;
+    background-color:#012b5d ;
+    padding: 0 20px;
+}
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav > ul > li:last-child >a{
+    background: url(/images/user-solid-24.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav > ul > li::hover >a{
+    background: url(/images/user-regular-24.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav  ul  li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    
+}
+nav > ul > li > a{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    box-shadow: rgba(232, 25, 25, 0.17) 0px -23px 25px 0px inset, rgba(241, 48, 48, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(212, 132, 132, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(241, 54, 54, 0.09) 0px 32px 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 300ms ease;
+    
+    
+}
+nav > ul > li > a:hover{
+    border: inset #ff0404;
+    border-style: inset hidden inset;
+    transform: scale(1.2);
+    box-shadow: rgba(223, 19, 19, 0.4) 0px 30px 90px;
+
+}
+/*#selected{
+    border: inset #ff0404;
+    border-style: inset hidden inset;
+    transform: scale(1.2);
+    box-shadow: rgba(223, 19, 19, 0.4) 0px 30px 90px;
+}*/
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    z-index: 10;
+    transition: all 3ms ease;
+
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+nav ul li ul:before{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 11px solid white;
+    position: absolute;
+    top: -25;
+    left: 20px;
+
+}
+nav ul li ul li a{
+    display: block;
+    color: #ff0404;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background-color: #ff0404;
+    color: white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    
+}
