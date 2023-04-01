@@ -1,8 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap');
-
-
 *{
     margin: 0%;
     padding: 0%;
@@ -57,8 +52,8 @@ header{
     width: 50px;
     top: 0;
     right: 0;
-    background-color: red;
-    height: 40px;
+    background-color: rgb(72, 0, 255);
+    height: 30px;
     line-height: 30px;
     text-align: center;
     color: white;
@@ -74,16 +69,14 @@ header{
 .Buscar input:focus{
     width: 240px;
 }
-.btn:hover i{
-    transform: rotate(-360deg);
-}
+
 .buscar{
     margin-left: 500px;
 }
 .container_menu{
     width: 100%;
     height: 80px;
-    background-color:#012b5d ;
+    background-color:#ff0000 ;
     
 }
 .menu{
@@ -105,7 +98,7 @@ nav > ul > li:last-child >a{
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: red;
+    background-color:rgb(72, 0, 255);
 }
 nav > ul > li >:hover >a{
     background: url(/images/user-regular-24.png);
@@ -130,12 +123,12 @@ nav > ul > li > a{
     border-radius: 10px;
     margin-top: 10px;
     transition: all 300ms ease;
-    background-color: red;
+    background-color: rgb(72, 0, 255);
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     
 }
 nav > ul > li > a:hover{
-    border: inset #ff0404;
+    border: inset rgb(72, 0, 255);
     border-style: inset hidden inset;
     transform: scale(1.2);
     box-shadow: rgba(223, 19, 19, 0.4) 0px 30px 90px;
@@ -182,7 +175,7 @@ nav ul li ul:before{
 }
 nav ul li ul li a{
     display: block;
-    color: #4f04ff;
+    color: #ff0404;
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
@@ -191,130 +184,10 @@ nav ul li ul li a{
     transition: all 300ms ease;
 }
 nav ul li ul li a:hover{
-    background-color: #ff0404;
+    background-color: rgb(72, 0, 255);
     color: white;
     transform: scale(1.1);
     padding-left: 30px;
     font-size: 14px;
     
-}
- .container2-2{
-    height: 100%;
-    width: 100%;
-    background-image: url(/images/fondo5.jpeg);
-   background-position: center;
-   background-size: cover;
-   position:absolute;
-    
- }
- .container2-2 h1{
-    color: white;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-
- }
-
- .text{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-.paragraf{
-    color: rgb(245, 245, 245);
-    width: 500px;
-    text-align: justify;
-    margin-top: 100px;
-    padding: 10px;
-    font-family: 'Averia Libre', cursive;
-}
-.titlle{
-    margin-top: 50px;
-    text-transform: uppercase;
-}
-#a{
-    text-align: center;
-}
-#bus{
-    text-align: center;
-}
-.paragraf p{
-    font-family: 'Averia Libre', cursive;
-    
-}
-.titlle:hover{
-    transform: scale(1.1);
-}
-.paragraf:hover{
-    transform: scale(1.3);
-}
-.btn  button{
-    background-color: #5d0407;
-    background-image: linear-gradient(43deg, #5d0407 0%, #3414af 46%, #ff002f 100%);
-    
-border: none;
-border-radius: 20px;
-color: white;
-padding: 20px;
-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-cursor: pointer;
-font-size: 20px;
-margin-left: 215px;
-
-    
-}
-
-.btn button:hover{
-    transform:scale(1.1)
-}
-.logs{
-    display: flex;
-    flex-direction: row;
-    margin-right: 100px;
-    margin-top: 20px;
-}
-.log1 img{
-    width: 30px;
-    cursor: pointer;
-}
-.log2 img{
-width: 30px;
-cursor: pointer;
-}
-.log3 img{
-    width: 30px;
-    cursor: pointer;
-}
-.log4 img{
-    width: 30px;
-    cursor: pointer;
-}
-footer{
-    margin-top: 750px;
-    border: 5px inset #012b5d;
-    border: 5px inset #012b5d;
-    border-style: inset hidden hidden;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 20px;
-    
-}
-.container-f{
-    display: flex;
-    justify-content: space-between;
-}
-.log1:hover{
-    transform: scale(1.1);
-}
-.log2:hover{
-    transform: scale(1.1);
-}
-.log3:hover{
-    transform: scale(1.1);
-}
-.log4:hover{
-    transform: scale(1.1);
-}
-.title{
-    margin-left: 100px;
-    margin-top: 20px;
 }
